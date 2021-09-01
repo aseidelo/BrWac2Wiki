@@ -62,7 +62,7 @@ For time reasons, the search had the following rule:
 - Search for __2 seconds__ at least __1 document__, if not found, remove wiki article from dataset.
 
 ## Dataset generation
-Read ```dataset_generation/README.md``` for details on how to generate this yourself.
+Read ```dataset_generation/README.md``` for details on how to generate the dataset.
 
 ## Citation
 If you use this dataset for your work, please cite:
