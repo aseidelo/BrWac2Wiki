@@ -5,10 +5,12 @@ This is a dataset for multi-document summarization in Portuguese, what means tha
 Input texts were extracted from BrWac corpus, and the output from Brazilian Wikipedia dumps page.
 
 BrWac2Wiki contains __114.652 examples__ of (documents, wikipedia) pairs! So it is suitable for training and validating AI models for the multi-document summarization in Portuguese.
-More information on the paper "PLSUM: Generating PT-BR Wikipedia by Summarizing Websites", under review for the conference ENIAC 2021.
+More information on the paper "PLSUM: Generating PT-BR Wikipedia by Summarizing Websites", by André Seidel Oliveira¹ and Anna Helena Reali Costa¹, under review for the conference ENIAC 2021.
 Our work is inspired by WikiSum, a similar dataset for the English language.
 
 The dataset can be downloaded here. 
+
+1 - researchers at the Department of Computer Engineering and Digital Systems (PCS) of University of São Paulo (USP)
 
 ## Description of data
 There are three files on the dataset: _docid.json_, _docs.json_, and _wiki.json_.
