@@ -43,7 +43,7 @@ There are three files on the dataset: _docid.json_, _docs.json_, and _wiki.json_
 - _text_: a list of the contained text of each section on _sections_.
 
 
-### __docs.json_:
+### _docs.json_:
 ```
 {
   "docid": "net-6bc350",
@@ -62,10 +62,10 @@ For time reasons, the search had the following rule:
 - Search for __2 seconds__ at least __1 document__, if not found, remove wiki article from dataset.
 
 ## Dataset generation
-To generate this dataset (...)
+Read ```dataset_generation/README.md``` for details on how to generate this yourself.
 
 ## Citation
 If you use this dataset for your work, please cite:
 
-### Acknowledgements
+## Acknowledgements
 
