@@ -4,16 +4,16 @@ Official repo for the dataset BrWac2Wiki. Contains scripts for the generation of
 This is a dataset for multi-document summarization in Portuguese, what means that it has examples of multiple documents (input) related to human written summaries (output). In particular, it has entries of __multiple related texts from Brazilian websites__ about a subject, and the summary is the __Portuguese Wikipedia lead section on the same subject__ (_lead_: the first section, i.e., summary, of any Wipedia article).
 Input texts were extracted from BrWac corpus, and the output from Brazilian Wikipedia dumps page.
 
-BrWac2Wiki contains __114.652 examples__, what makes it suitable for training and validating AI models for the multi-document summarization task.
+BrWac2Wiki contains __114.652 examples__ of (documents, wikipedia) pairs! So it is suitable for training and validating AI models for the multi-document summarization in Portuguese.
 More information on the paper "PLSUM: Generating PT-BR Wikipedia by Summarizing Websites", under review for the conference ENIAC 2021.
 Our work is inspired by WikiSum, a similar dataset for the English language.
 
 The dataset can be downloaded here. 
 
-### Description of data
+## Description of data
 There are three files on the dataset: _docid.json_, _docs.json_, and _wiki.json_.
 
-#### _wiki_docids.json_:
+### _wiki_docids.json_:
 
 ```
 {
@@ -28,7 +28,7 @@ There are three files on the dataset: _docid.json_, _docs.json_, and _wiki.json_
 - _docids_: is a list of document unique ids from BrWac. Each document is the text content from an website;
 - _doc_pos_: is a list of document positions on _docs.json_, for fast retrieving.
 
-#### _wiki.json_ :
+### _wiki.json_ :
 ```
 {
   "title": "Hino da Independência do Brasil", 
@@ -43,17 +43,17 @@ There are three files on the dataset: _docid.json_, _docs.json_, and _wiki.json_
 - _text_: a list of the contained text of each section on _sections_.
 
 
-#### __docs.json_:
+### __docs.json_:
 ```
 {
   "docid": "net-6bc350",
-  "text": ""independência do brasil\nseparação política entre a colônia do brasil e a metrópole portuguesa , declarada oficialmente no dia 7 de setembro de 1822 . o processo de independência começa com o agravamento da crise do sistema colonial e se estende até a adoção da primeira constituição brasileira , em 1824 .\nas revoltas do final do século xviii e começo do xix , como a inconfidência mineira , a conjuração baiana e a revolta pernambucana de 1817 , mostram o enfraquecimento do sistema colonial .\n(...)"
+  "text": "independência do brasil\nseparação política entre a colônia do brasil e a metrópole portuguesa , declarada oficialmente no dia 7 de setembro de 1822 . o processo de independência começa com o agravamento da crise do sistema colonial e se estende até a adoção da primeira constituição brasileira , em 1824 .\nas revoltas do final do século xviii e começo do xix , como a inconfidência mineira , a conjuração baiana e a revolta pernambucana de 1817 , mostram o enfraquecimento do sistema colonial .\n(...)"
 }
 ```
 - _docid_: the unique document id for a website text on BrWac (same as _docid_ on the list of _docids_ from _docid.json_);
 - _text_: raw text of the document.
 
-### Details
+## Details
 The search for association between BrWac documents and Wikipedia articles was made with the help of a MongoDB database. We populated the database with BrWac documents and them perform a text search for Wikipedia titles. 
 
 For time reasons, the search had the following rule:
@@ -61,10 +61,10 @@ For time reasons, the search had the following rule:
 - Limit a maximum of 15 documents per wiki article;
 - Search for __2 seconds__ at least __1 document__, if not found, remove wiki article from dataset.
 
-### Dataset generation
+## Dataset generation
 To generate this dataset (...)
 
-### Citation
+## Citation
 If you use this dataset for your work, please cite:
 
 ### Acknowledgements
