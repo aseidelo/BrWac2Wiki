@@ -1,6 +1,8 @@
 # BrWac2Wiki
 Official repo for the dataset BrWac2Wiki. Contains scripts for the generation of the dataset.
 
+__The challenge: Generate Brazilian Wikipedia articles from multiple website texts!__
+
 This is a dataset for multi-document summarization in Portuguese, what means that it has examples of multiple documents (input) related to human written summaries (output). In particular, it has entries of __multiple related texts from Brazilian websites__ about a subject, and the summary is the __Portuguese Wikipedia lead section on the same subject__ (_lead_: the first section, i.e., summary, of any Wipedia article).
 Input texts were extracted from BrWac corpus, and the output from Brazilian Wikipedia dumps page.
 
