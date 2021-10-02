@@ -1,5 +1,5 @@
 # BrWac2Wiki
-Official repo for the dataset BrWac2Wiki. Contains scripts for the generation of the dataset.
+Official repo for the dataset BrWac2Wiki.
 
 __The challenge: Generate Brazilian Wikipedia articles from multiple website texts!__
 
@@ -54,9 +54,6 @@ For time reasons, the search had the following rule:
 - Search for __every word on the article title__ (AND search);
 - Limit a maximum of 15 documents per wiki article;
 - Search for __2 seconds__ at least __1 document__, if not found, remove wiki article from dataset.
-
-## Dataset generation
-Read ```dataset_generation/README.md``` for details on how to generate the dataset.
 
 ## Acknowledgements
 This research was supported by _Itaú Unibanco S.A._, with the scholarship program of _Programa de Bolsas Itaú_ (PBI), and partially financed by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), Finance Code 001, and CNPQ (grant 310085/2020-9), Brazil.
